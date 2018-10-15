@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1537645400 source:e:\algemene bestanden\bestanden\vakken\informatica\hardware presentatie\loop\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<windows.h>
+
+1537646140 source:d:\algemenebestanden\bestanden\vakken\informatica\hardwarepresentatie\loop\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<windows.h>
+
+1539466334 source:e:\algemenebestanden\bestanden\vakken\informatica\hardwarepresentatie\loop\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<windows.h>
+

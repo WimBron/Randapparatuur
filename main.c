@@ -19,8 +19,9 @@ int main()
     int verder;
     int verder2;
     int choice;
+    int stoppen;
 
-    putchar('B');
+    /*putchar('B');
     putchar('o');
     putchar('o');
     putchar('t');
@@ -47,11 +48,11 @@ int main()
     puts("Loading text...");
     for(start=0;start<3;start=start+1)
     {
-        printf("loading...................................[%d/10]\n",start+1);
+        printf("loading...................................[%d/3]\n",start+1);
         slp();
     }
     puts("Sync");
-        Sleep(2000);
+        Sleep(2000);*/
     puts("Done!\n");
     streep();
     printf("Hallo, dit is een programma dat gaat over randapparatuur.\n"); //intro
@@ -63,12 +64,15 @@ int main()
     bool PrinterLooping1 = true;
     bool PrinterLooping2 = true;
     bool PrinterLooping3 = true;
+    bool PrinterLooping4 = true;
     do
     {
         printf("Toets 1 in om verder te gaan: ");
         scanf("%d", &verder);
         if (verder == 1)
         {
+            printf("\n");
+            streep();
             printf("Oke, we beginnen met de printer.\n");
             printf("Je mag nu kiezen uit deelonderwerpen\n");
             printf("1 - De geschiedenis van de printer\n");
@@ -131,7 +135,7 @@ int main()
             }
             else if (choice == 4)
             {
-                printf("We gaan door naar het volgende onderwerp:");
+                printf("We gaan door naar het volgende onderwerp:\n");
                 PrinterLooping2 = false;
             }
             else if (choice == 5)
@@ -159,12 +163,166 @@ int main()
             }
             else
             {
-                puts("Oke, dan gaan we verder.");
-                PrinterLooping3 = false;
+                puts("Wat bedoel je?\n");
             }
-            } while (true == PrinterLooping2);
+        } while (true == PrinterLooping2);
+    PrinterLooping1 = false;
+        }
+        else
+        {
+            do
+            {
+                printf("Wil je afsluiten? [Yes = 1 No = 2]: ");
+                scanf("%d", &stoppen);
+                if (stoppen == 2)
+                {
+                    printf("Programma sluit niet af\n");
+                    PrinterLooping4 = false;
+                }
+                else if (stoppen == 1)
+                {
+                    printf("Programma sluit af...");
+                    return 0;
+                }
+                else
+                {
+                    printf("Wat bedoel je?\n");
+                }
+            } while (true == PrinterLooping4);
 
-            PrinterLooping1 = false;
-    }} while (true == PrinterLooping1);
+        }
+    } while (true == PrinterLooping1);
+    bool MuisLooping1 = true;
+    bool MuisLooping2 = true;
+    bool MuisLooping3 = true;
+    bool MuisLooping4 = true;
+    do
+    {
+        printf("Toets 1 in om naar dit onderwerp te gaan: ");
+        scanf("%d", &verder);
+        if (verder == 1)
+        {
+            printf("\n");
+            streep();
+            printf("Oke, we gaan het nu over de muis hebben.\n");
+            printf("Je mag nu kiezen uit deelonderwerpen\n");
+            printf("1 - De geschiedenis van de muis\n");
+            printf("2 - Waarvoor is een muis\n");
+            printf("3 - Soorten muizen\n");
+            printf("Druk op 4 om naar het volgende onderwerp te gaan.\n");
+            printf("Druk op 5 om af te sluiten.\n");
+            do
+            {
+                scanf("%d",&choice);
+
+                if (choice == 1)
+                {
+                    streep();
+                        printf("De muis werd in 1963-1964 ontwikkeld door Douglas Engelbart en Bill English.\n");
+                        printf("Het apparaat noemden ze: X-Y Position Indicator for a Display System.\n");
+                        printf("De daarbij gebruikte eenheid wordt mickey genoemd, naar de beroemde muis van Walt Disney.\n");
+                        printf("Het stuurprogramma van de muis kan bijvoorbeeld vastellen dat de muis drie mickeys naar links is geschoven.\n");
+                        printf("De eerste muis die standaard met een computer werd meegeleverd, had slechts 1 knop. De computer in kwestie werd gemaakt door Xerox.\n");
+                        printf("Dit is voornamelijk bij de Apple Macintosh een standaard gebruik gebleven, omdat de Macintosh werd gemaakt door ex-medewerkers van Xerox.\n");
+                        printf("Pas zeer recent is ook Apple gezwicht voor de verleiding van een meerknoppenmuis.\n");
+                        printf("De meeste muizen die halverwege de jaren 80 van de 20e voor de IBM en diens klonen, hadden 3 knoppen.\n");
+                        printf("Alleen microsoft werkte met 2 knoppen. 1 voor point and click en een voor het oproepen van zogenaamde context afhankelijke menu's\n");
+                        printf("Tegenwoordig zijn drie of twee knoppen de norm en alle afwijkingen daarvan uitzonderingen, veelal ontwikkeld voor zeer specifiek toepassingen.\n");
+                    streep();
+                        printf("Type je volgende keuze in: ");
+                }
+                else if (choice == 2)
+                {
+                    streep();
+                        printf("De muis is een apparaat dat doormiddel van een balletje of een laser-sensor de de locatie van de muis kan overzetten in de locatie op een scherm.\n");
+                        printf("Op die manier kun je makkelijk door je computer heen browsen zonder constant gebonden bend aan vakjes die je met je toestenbord moet selecteren.\n");
+                        printf("Hedendaags word de snelheid van je muis vertaald in de eenheid DPI ofwel dots per inch. Dit houdt in dat de muis kan zien hoeveel inch hij moet\n");
+                        printf("tellen voor elke pixel, DPI gaat meestal van 800 tot 8000\n");
+                    streep();
+                        printf("Type je volgende keuze in: ");
+                }
+                else if (choice == 3)
+                {
+                    streep();
+                        printf("Er zijn verschrikkelijk veel soorten muizen. We gaan er nu een hoop opnoemen en laten zien wat ze allemaal kunnen\n");
+                        printf("-Mechanische muis: \n");
+                        printf("De muis wordt niet meer zo vaak gebruikt maar is een van de oudste die er is. De muis gebruikt een rubber balletje onder de muis om de computer te besturen.\n\n");
+                        printf("-Optische muis: \n");
+                        printf("Deze muis is de muis waar we het meeste gebruik van maken, door middel van een sensor onder de muis kun je de computer besturen.\n\n");
+                        printf("-Trackball: \n");
+                        printf("Deze muis is eigenlijk een bal die je rond beweegt. Zie het als het balletje onder de mechanische muis, alleen dan zonder muis.\n\n");
+                        printf("-Pen-tablet: \n");
+                        printf("Dit is een tablet waarop je kan tekenen met een speciale pen. Doordat de tablet de locatie van de muis bepaalt op een speciaal soort\nscherm, kan hij heel precies aansturen.\n\n");
+                        printf("-Pen-muis: \n");
+                        printf("Deze muis is een pen waarmee je op het scherm van je apparaat kan schrijven. Het komt ook voor dat je gewoon op elk oppervlak kan schrijven.\n\n");
+                        printf("-Voetmuis: \n");
+                        printf("Deze muis wordt bestuurd door je voeten! Het lijkt op de trackball, alleen dan met je voeten.\n\n");
+                        printf("-Oogmuis: \n");
+                        printf("De oogmuis ofwel Eye-tracker, kan de locatie zien waar je naar kijkt. Op die manier kunnen ze de muis op de plek van je ogen houden.\n\n");
+                        printf("-Webcam: \n");
+                        printf("Webcam's zijn al best lang in gebruik als track-systemen. De webcam kijkt hoe je beweegt en zet dat om in een locatie. Vaak wordt dat gedaan doormiddel van wijzen.\n");
+                        printf("Misschien wel de bekendste webcam-tracker apparatuur is de Kinect\n\n");
+                        printf("-Touchpads: \n");
+                        printf("De touchpads worden voornamelijk gebruikt op laptops. Het is een gevoelig vierkant op je latop waar je met je vinger over kunt wrijven om de muis te bewegen.\n\n");
+                    streep();
+                        printf("Type je volgende keuze in: ");
+                }
+                else if (choice == 4)
+                {
+                    printf("We gaan door naar het volgende onderwerp:\n");
+                    MuisLooping2 = false;
+                }
+                else if (choice == 5)
+                {
+                    do
+                    {
+                        printf("Wil je afsluiten? [Yes = 1 No = 2]: ");
+                        scanf("%d", &verder2);
+                        if (verder2 == 2)
+                        {
+                            printf("Programma sluit niet af\n");
+                            MuisLooping3 = false;
+                        }
+                        else if (verder2 == 1)
+                        {
+                            printf("Programma sluit af...");
+                            return 0;
+                        }
+                        else
+                        {
+                            printf("Wat bedoel je?\n");
+                        }
+                    } while (true == MuisLooping3);
+                }
+                else
+                {
+                    puts("Wat bedoel je?\n");
+                }
+            }while (true == MuisLooping2);
+        MuisLooping1 = false;
+    }
+    else
+    {
+        do
+        {
+            printf("Wil je afsluiten? [Yes = 1 No = 2]: ");
+            scanf("%d", &stoppen);
+            if (stoppen == 2)
+            {
+                printf("Programma sluit niet af\n");
+                MuisLooping4 = false;
+            }
+            else if (stoppen == 1)
+            {
+                printf("Programma sluit af...");
+                return 0;
+            }
+            else
+            {
+                printf("Wat bedoel je?\n");
+            }
+        } while (true == MuisLooping4);
+    }
+    }while (true == MuisLooping1);
     return 0;
 }
