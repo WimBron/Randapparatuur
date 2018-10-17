@@ -21,7 +21,7 @@ int main()
     int choice;
     int stoppen;
 
-    /*putchar('B');
+    putchar('B');
     putchar('o');
     putchar('o');
     putchar('t');
@@ -52,7 +52,7 @@ int main()
         slp();
     }
     puts("Sync");
-        Sleep(2000);*/
+        Sleep(2000);
     puts("Done!\n");
     streep();
     printf("Hallo, dit is een programma dat gaat over randapparatuur.\n"); //intro
@@ -440,8 +440,8 @@ int main()
                         printf("Wat bedoel je?\n");
                     }
                 } while (MonitorLooping2 == true);
+     MonitorLooping1 = false;
             }
-    MonitorLooping1 = false;
             else
         {
             do
