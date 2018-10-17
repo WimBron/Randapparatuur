@@ -203,11 +203,11 @@ int main()
         if (verder == 1)
         {
             printf("\n");
-            streep();
+        streep();
             printf("Oke, we gaan het nu over de muis hebben.\n");
             printf("Je mag nu kiezen uit deelonderwerpen\n");
             printf("1 - De geschiedenis van de muis\n");
-            printf("2 - Waarvoor is een muis\n");
+            printf("2 - Waarvoor is een muis en hoe werkt hij\n");
             printf("3 - Soorten muizen\n");
             printf("Druk op 4 om naar het volgende onderwerp te gaan.\n");
             printf("Druk op 5 om af te sluiten.\n");
@@ -298,31 +298,173 @@ int main()
                 {
                     puts("Wat bedoel je?\n");
                 }
-            }while (true == MuisLooping2);
-        MuisLooping1 = false;
+            } while (true == MuisLooping2);
+    MuisLooping1 = false;
     }
-    else
-    {
-        do
+        else
         {
-            printf("Wil je afsluiten? [Yes = 1 No = 2]: ");
-            scanf("%d", &stoppen);
-            if (stoppen == 2)
+            do
             {
-                printf("Programma sluit niet af\n");
-                MuisLooping4 = false;
-            }
-            else if (stoppen == 1)
-            {
-                printf("Programma sluit af...");
-                return 0;
-            }
-            else
-            {
-                printf("Wat bedoel je?\n");
-            }
-        } while (true == MuisLooping4);
-    }
+                printf("Wil je afsluiten? [Yes = 1 No = 2]: ");
+                scanf("%d", &stoppen);
+                if (stoppen == 2)
+                {
+                    printf("Programma sluit niet af\n");
+                    MuisLooping4 = false;
+                }
+                else if (stoppen == 1)
+                {
+                    printf("Programma sluit af...");
+                    return 0;
+                }
+                else
+                {
+                    printf("Wat bedoel je?\n");
+                }
+            } while (true == MuisLooping4);
+        }
     }while (true == MuisLooping1);
+
+    bool MonitorLooping1 = true;
+    bool MonitorLooping2 = true;
+    bool MonitorLooping3 = true;
+    bool MonitorLooping4 = true;
+    do
+    {
+        printf("Toets 1 in om naar dit onderwerp te gaan: ");
+        scanf("%d", &verder);
+        if (verder == 1)
+            {
+                printf("\n");
+            streep();
+                printf("Oke, we gaan het nu over de monitor hebben.\n");
+                printf("Je mag nu kiezen uit deelonderwerpen\n");
+                printf("1 - De geschiedenis van de monitor\n");
+                printf("2 - Waarvoor is een monitor en hoe werkt hij\n");
+                printf("3 - Soorten monitoren\n");
+                printf("Druk op 4 om naar het volgende onderwerp te gaan.\n");
+                printf("Druk op 5 om af te sluiten.\n");
+                do
+                {
+                    scanf("%d",&choice);
+
+                    if (choice == 1)
+                    {
+                    streep();
+                        printf("De eerste monitoren waren ingebouwd in de computer. We hebben het dan over de jaren '30 tot de jaren '60.\n");
+                        printf("Pas toen de tv werd uitgevonden, begon de tijd van losse monitoren. De eerste tv's waren dan ook de eerste monitoren voor home pc's\n");
+                        printf("De eerste personal computers werkten met monochrome monitoren, dat wil zeggen, ze toonden alleen groen gekleurde of alleen oranje\n");
+                        printf("gekleurde karakters. De mogelijkheden die deze beeldschermen boden voor het interactief werken, hebben een revolutie betekend in het\n");
+                        printf("gebruik van de computer. De monitoren brandden snel in, dat wil zeggeen als een bepaalde afbeelding voor een langere tijd werd geprojecteerd\n");
+                        printf("op het scherm, de oplichtende fosforlaag werd aangetast. Als je dan het beeldscherm uitzette, was de afbeelding voor altijd vaag zichtbaar.\n");
+                        printf("Vanaf ongeveer 1985 tot begin 2000 veranderde het gebruik van beeldbuismonitors naar kleurenschermen. De beeldschermen konden ook in steeds\n");
+                        printf("grotere afmetingen worden gemaakt. Omdat de eerste beeldschermen een vaste verhouding hadden van 4:3 was het voldoende om alleen de diagonale\n");
+                        printf("afmetingen aan te geven. Tegenwoordig geven we vaak de verhouding erbij.\n");
+                    streep();
+                        printf("Type je volgende keuze in: ");
+                    }
+                    else if (choice == 2)
+                    {
+                    streep();
+                        printf("Een monitor laat de output van je grafische kaart zien. Je kan door je monitor ongestoord door je computer heen browsen.\n");
+                        printf("Je hebt Active displays zoals Liquid crystal display(LCD), Cathodoluminescence(CRT,FED,VFD,SED), Electroluminescence(EL,LED,OLED),\n");
+                        printf("Photoluminescence(PDP), Incandescence(Numitron). Daarnaast heb je nog Passive displays zoals LCD, Electrophoresis, Electrochromism, Electrowetting,\n");
+                        printf("Electromechanical modulation(flap display,flip-disk display,DMD,IMOD,FTIR). Active displays zijn beeldschermen die licht uitzenden.\n");
+                        printf("Passive displays weerkaatsen licht. Al deze begrippen hierboven worden bij soorten beeldschermen uitgelegt.\n");
+                    streep();
+                        printf("Type je volgende keuze in: ");
+                    }
+                    else if (choice == 3)
+                    {
+                        streep();
+                        printf("\tActive Displays:\n");
+                        printf("-LCD: \n");
+                        printf("Een LCD scherm, Liquid crystal display, is bij een actief scherm een schijf met kristalletjes die het licht uit een 4 lampjes in de hoek weten te\n");
+                        printf("weerkaatsen op een manier waarop het kleur krijgt. LCD is een van de meest voorkomende soorten beeldschermen.\n\n");
+                        printf("-Cathodoluminescence: \n");
+                        printf("Je hebt bij deze vorm van monitoren te maken met het principe dat electronen zich gaan buigen op een bepaald materiaal, en zich zo omwerken tot\n");
+                        printf("fotonen, die zich in golflengte beweegt dat de mens hem kan zien als licht. Alle monitoren onder dit segment berusten op dit principe.\n\n");
+                        printf("-Electroluminescence: \n");
+                        printf("Bij deze vorm wordt er gebruik gemaakt van het feit dat als elektronen zich door een materiaal beweegt fotononen uitzend. Waar fotonen worden uitgezonden\n");
+                        printf("word dus ook licht uitgezonden. De monitoren werken dus op hele kleine ledjes.\n\n");
+                        printf("-Photoluminescence: \n");
+                        printf("Deze monitoren staan ook wel bekend als Plasma-monitors. Deze monitors hebben een materiaal in zich zitten dat fotonen kan opnemen en ombuigen. Dit noemen\n");
+                        printf("we electromagnetic radiation.\n\n");
+                        printf("-Incandescence: \n");
+                        printf("Bij Incandescence is het principe heel makkelijk. Een materiaal wordt zo heet opgewarmd dat het gaat gloeien. Op die manier zend hij licht uit.\n\n");
+                        printf("\tPassive Displays:\n");
+                        printf("-LCD: \n");
+                        printf("Bij een passive display is een LCD scherm een soort van spiegel die ligt opvangt en weer weet te weerkaatsen.\n\n");
+                        printf("-Electrophoresis: \n");
+                        printf("Electrophoresis is een activiteit in het scherm die het licht opvangt in een vloeistof en zo het licht versterkt door er een electromagnetisch veld bij te zetten.\n\n");
+                        printf("-Electrochromism: \n");
+                        printf("Electrochromism is eigenlijk heel makkelijk. Sommige materialen veranderen van kleur bij een bepaalde reactie. Dit zorgt ervoor dat er in het hele beeldscherm\n");
+                        printf("electriciteit loopt. zodat op elke plek het materiaal een andere kleur kan aannemen.\n\n");
+                        printf("-Electrowetting: \n");
+                        printf("Bij Electrowetting wordt er een materiaal in gezet dat bij spanning licht weerkaatst en bij geen spanning geen licht weerkaatst. Dat komt omdat er op de metalen\n");
+                        printf("een dun vloeibaar materiaal op wordt gedaan dat bij spanning weerkaatst.\n\n");
+                        printf("-Electromechanical modulation: \n");
+                        printf("Bij Electromechanical modulation worden er spiegeltjes in je display gezet die alle kleuren hebben. De kleur die ze moeten hebben wordt naar het licht gedraaid.\n\n");
+                    streep();
+                        printf("Type je volgende keuze in: ");
+                    }
+                    else if (choice == 4)
+                    {
+                        printf("We gaan door naar het volgende onderwerp:\n");
+                    MonitorLooping2 = false;
+                    }
+                    else if (choice == 5)
+                    {
+                        do
+                        {
+                            printf("Wil je afsluiten? [Yes = 1 No = 2]: ");
+                            scanf("%d", &verder2);
+                            if (verder2 == 2)
+                            {
+                                printf("Programma sluit niet af\n");
+                                MonitorLooping3 = false;
+                            }
+                            else if (verder2 == 1)
+                            {
+                                printf("Programma sluit af...");
+                                return 0;
+                            }
+                            else
+                            {
+                                printf("Wat bedoel je?\n");
+                            }
+                        } while (true == MonitorLooping3);
+                    }
+                    else
+                    {
+                        printf("Wat bedoel je?\n");
+                    }
+                } while (MonitorLooping2 == true);
+            }
+    MonitorLooping1 = false;
+            else
+        {
+            do
+            {
+                printf("Wil je afsluiten? [Yes = 1 No = 2]: ");
+                scanf("%d", &stoppen);
+                if (stoppen == 2)
+                {
+                    printf("Programma sluit niet af\n");
+                    MonitorLooping4 = false;
+                }
+                else if (stoppen == 1)
+                {
+                    printf("Programma sluit af...");
+                    return 0;
+                }
+                else
+                {
+                    printf("Wat bedoel je?\n");
+                }
+            } while (true == MonitorLooping4);
+        }
+
+    }while (MonitorLooping1 = true);
     return 0;
 }
