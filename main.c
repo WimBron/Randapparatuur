@@ -173,13 +173,13 @@ int main()
             do
             {
                 printf("Wil je afsluiten? [Yes = 1 No = 2]: ");
-                scanf("%d", &stoppen);
-                if (stoppen == 2)
+                scanf("%d", &verder2);
+                if (verder2 == 2)
                 {
                     printf("Programma sluit niet af\n");
                     PrinterLooping4 = false;
                 }
-                else if (stoppen == 1)
+                else if (verder2 == 1)
                 {
                     printf("Programma sluit af...");
                     return 0;
@@ -466,5 +466,35 @@ int main()
         }
 
     }while (MonitorLooping1 = true);
+
+    bool AudioLooping1 = true;
+    bool AudioLooping2 = true;
+    bool AudioLooping3 = true;
+    bool AudioLooping4 = true;
+
+    do
+    {
+        printf("Toets 1 om naar dit onderwerp te gaan: ");
+        scanf("%d",&verder);
+        if (verder == 1)
+            {
+                printf("\n");
+            streep();
+                printf("Oke, we gaan het nu over audioapparaten hebben.\n");
+                printf("Je mag nu kiezen uit deelonderwerpen\n");
+                printf("1 - De geschiedenis van audioapparaten tor\n");
+                printf("2 - Waarvoor zijn audioapparaten en hoe werken ze\n");
+                printf("3 - Soorten audiosystemen\n");
+                printf("Druk op 4 om naar het volgende onderwerp te gaan.\n");
+                printf("Druk op 5 om af te sluiten.\n");
+                do
+                {
+                    scanf("%d",&choice);
+                    if (choice == 1);
+                    printf("De eerste audioapparaten waren primitieve hoofdtelefonen. Ze werd uitgevonden in 1919 door meneer Nathaniel Baldwin.\n");
+                    printf("")
+                }
+            }
+    }
     return 0;
 }
